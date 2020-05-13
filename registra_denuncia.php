@@ -6,7 +6,7 @@ session_start();
 	if (isset($_POST['endereco'])) {
 		$arquivo_temporario = $_FILES['imagem']['tmp_name'];
 		$arquivo            = $_FILES['imagem']['name'];
-		$diretorio          = 'assets/images';
+		$diretorio          = '../assets/images';
 
 		move_uploaded_file($arquivo_temporario, $diretorio.'/'.$arquivo);
 	}
